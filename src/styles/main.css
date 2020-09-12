@@ -289,7 +289,7 @@ a{
 }
 
 .anchor-text {
-	color: darkslategrey;
+	color: #000;
 }
 
 /* Small Text */
@@ -403,19 +403,16 @@ a{
 }
 
 .input {
-	/* background-color: #1c8b6261;
-	border-color: #157f57; */
-	background-color: #282c2b61;
-	border-color: #7b8380ad;
+	background-color: #fff;
+	border-color: #ccc;
 	border-radius: 2.5px;
 	border-style: ridge;
 	border-width: 1px;
-	/* box-shadow: 0 0px 2px #eee; */
+	box-shadow: 0 0px 2px #eee;
 	font-size: 14px;
 	font-weight: 400;
 	padding: 0.75em;
 	width: 100%;
-	color: white;
 }
 
 .card,
@@ -442,7 +439,6 @@ h2 {
 
 h3 {
 	font-size: 20px;
-	font-weight: normal;
 }
 
 h4 {
