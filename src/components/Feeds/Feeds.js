@@ -1,5 +1,5 @@
 import React from 'react';
-import Feed from './Feed.js/Feed';
+import Feed from './Feed/Feed';
 
 function Feeds() {
 	return (
