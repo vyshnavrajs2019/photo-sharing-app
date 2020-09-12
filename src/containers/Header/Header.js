@@ -6,10 +6,10 @@ function Header() {
 	return (
 		<header className="row span-100-12 p-1 vertical-center card">
 			<h3 className="row span-100-3">picshare</h3>
-			<div className="row span-100-4">
+			<div className="row span-100-6">
 				<Search />
 			</div>
-			<div className="row span-100-5">
+			<div className="row span-100-3">
 				<Navs />
 			</div>
 		</header>
