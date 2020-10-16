@@ -1,0 +1,7 @@
+.Pics {
+	position: relative;
+}
+
+.Pics > * {
+	max-width: calc(100% / 3);
+}
