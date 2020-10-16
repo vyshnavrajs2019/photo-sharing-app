@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Form from '../UI/Form/Form';
 import Input from '../UI/Input/Input';
+import Suggestion from './Suggestion/Suggestion';
 
 export class Search extends Component {
 	state = {
@@ -11,23 +12,20 @@ export class Search extends Component {
 		this.setState({ query: event.target.value });
 	}
 
-	handleSubmit = () => {
-
+	handleReset = () => { 
+		this.setState({ query: "" })
 	}
-
-	handleReset = () => { }
 
 	render() {
 		return (
 			<Form 
-				method="GET" 
-				submitHandler={this.handleSubmit} 
-				resetHandler={this.handleReset}>
+				method="GET">
 					<Input
 						type="text"
 						value={this.state.query}
 						placeholder="Search"
 						changeHandler={this.handleInputChange} />
+					<Suggestion clearQuery={this.handleReset} query={this.state.query} />
 			</Form>
 		)
 	}

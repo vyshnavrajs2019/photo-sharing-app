@@ -1,0 +1,8 @@
+.Suggestion {
+	position: absolute;
+	left: 0px; right: 0px;
+	height: auto;
+	padding: 10px;
+	top: 100%;
+	background-color: white;
+}

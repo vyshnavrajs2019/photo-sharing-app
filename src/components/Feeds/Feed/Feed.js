@@ -1,13 +1,23 @@
-import React, { Component } from 'react';
+import React from 'react';
+import UserHeader from '../../User/UserHeader';
+import FullPic from './FullPic/FullPic';
+import { connect } from 'react-redux';
 
-export class Feed extends Component {
-	render() {
-		return (
-			<div className="feed row span-100-12 p-1 card mb-1">
-				
-			</div>
-		)
-	}
+function Feed(props) {
+	const { users, pic } = props;
+	const user = users[pic.owner];
+
+	return (
+		<div className="feed row span-100-12 p-05 card mb-1">
+			<UserHeader user={user} />
+			<div className="row span-100-12 mt-05"></div>
+			<FullPic noModal pic={pic} />
+		</div>
+	)
 }
 
-export default Feed;
+const mapStateToProps = state => ({
+	users: state.users
+});
+
+export default connect(mapStateToProps)(Feed);

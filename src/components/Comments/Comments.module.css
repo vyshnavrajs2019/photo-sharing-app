@@ -1,0 +1,8 @@
+.Comments > * {
+	margin-bottom: 0.5em;
+	background-color: #f3f3f3;
+}
+
+.Comments > *:last-child {
+	margin-bottom: 0em;
+}

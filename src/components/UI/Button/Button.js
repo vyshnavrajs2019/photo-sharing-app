@@ -3,9 +3,9 @@ import React from 'react';
 function Button(props) {
 	return (
 		<button
-			className={"row span-100-12 btn " + props.classes}
+			className={"row span-100-12 btn horizontal-center " + props.classes}
 			type={props.type}
-			onClick={props.handle}>
+			onClick={props.handleClick}>
 			{props.label}
 		</button>
 	)
