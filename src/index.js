@@ -25,13 +25,9 @@ export const store = createStore(rootReducer, composeEnhancers());
 
 ReactDOM.render(
 	<React.StrictMode>
-<<<<<<< HEAD
-		<App />
-=======
 		<Provider store={store}>
 			<App />
 		</Provider>
->>>>>>> working
 	</React.StrictMode>,
 	document.getElementById('root')
 );
